@@ -1,0 +1,27 @@
+
+<div>
+  <div>
+<h3>SpreadJS with Google Transit Data</h3>
+
+<label for="stop">Choose a transit stop:</label>
+
+<select id="cars">
+  <option value="stop1">stop1</option>
+  <option value="stop2">stop2</option>
+  <option value="stop3">stop3</option>
+  <option value="stop4">stop4</option>
+</select>
+
+<button (click)="printBtn()">Print</button> 
+<br><br>
+  </div>
+  <div>
+
+<gc-spread-sheets [hostStyle]="hostStyle" (workbookInitialized)="workbookInit($event)">
+  <gc-worksheet></gc-worksheet>
+</gc-spread-sheets>
+
+
+</div>
+
+<div>
